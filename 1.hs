@@ -1,3 +1,5 @@
+{-# OPTIONS_GHC -O3 -optc-O3 #-}
+
 --idea 1
 sumOfN n=n*(n+1)`div`2
 sumOfMultiplesOfN m n=n*(sumOfN$ m`div`n)
