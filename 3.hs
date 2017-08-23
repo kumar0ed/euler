@@ -2,7 +2,7 @@
 
 minimize n factor=
   if n`mod`factor==0
-  then n`div`factor
+  then minimize (n`div`factor) factor
   else n
 
 pollardRho' n x y 1=pollardRho' n x' y' (gcd (abs (x'-y')) n)
