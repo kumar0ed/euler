@@ -1,7 +1,7 @@
 --idea 1
 sumOfN n=n*(n+1)`div`2
-sumOfMultiplesOfN m n=sumOfN$ m`div`n
-main=print$ 3*(sumOfMultiplesOfN 999 3)+5*(sumOfMultiplesOfN 999 5)-15*(sumOfMultiplesOfN 999 15)
+sumOfMultiplesOfN m n=n*(sumOfN$ m`div`n)
+main=print$ (sumOfMultiplesOfN 999 3)+(sumOfMultiplesOfN 999 5)-(sumOfMultiplesOfN 999 15)
 
 
 ----idea 0
